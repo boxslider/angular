@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@boxslider/angular": [
+        "dist/boxslider/angular/boxslider-angular",
+        "dist/boxslider/angular"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
