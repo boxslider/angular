@@ -1,5 +1,5 @@
 import {
-  AfterViewInit,
+  AfterViewInit, Directive,
   ElementRef,
   EventEmitter,
   Input,
@@ -21,6 +21,7 @@ import {
 
 export type EffectOptions = CarouselSliderOptions | CubeSliderOptions | FadeSliderOptions | TileSliderOptions;
 
+@Directive({ selector: '[bxlSlider]' })
 export class BoxSliderDirective implements AfterViewInit, OnChanges, OnDestroy {
   @Input() activeSlide: number;
   @Input() autoScroll: boolean;
