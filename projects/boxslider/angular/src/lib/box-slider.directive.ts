@@ -19,7 +19,7 @@ import {
   TileSliderOptions
 } from '@boxslider/slider';
 
-type EffectOptions = CarouselSliderOptions | CubeSliderOptions | FadeSliderOptions | TileSliderOptions;
+export type EffectOptions = CarouselSliderOptions | CubeSliderOptions | FadeSliderOptions | TileSliderOptions;
 
 export class BoxSliderDirective implements AfterViewInit, OnChanges, OnDestroy {
   @Input() activeSlide: number;

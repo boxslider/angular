@@ -6,7 +6,7 @@
     "start": "ng serve",
     "start:demo": "ng serve",
     "build": "ng build",
-    "build:boxslider": "ng build --project=@boxslider/angular",
+    "build:boxslider": "ng build --project=@boxslider/angular --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

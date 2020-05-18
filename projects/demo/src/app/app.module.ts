@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { BoxSliderModule } from '../../../boxslider/angular/src/lib/box-slider.module';
 import { FormsModule } from '@angular/forms';
+import { FadeSliderModule } from '@boxslider/angular';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    BoxSliderModule,
+    FadeSliderModule,
     FormsModule
   ],
   providers: [],
