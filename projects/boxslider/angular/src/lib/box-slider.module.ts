@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
-import { CubeSliderDirective } from './cube-slider.directive';
-import { FadeSliderDirective } from './fade-slider.directive';
-import { TileSliderDirective } from './tile-slider.directive';
-import { CarouselSliderDirective } from './carousel-slider.directive';
+
+import { CarouselSliderModule } from './carousel-slider/carousel-slider.module';
+import { CubeSliderModule } from './cube-slider/cube-slider.module';
+import { FadeSliderModule } from './fade-slider/fade-slider.module';
+import { TileSliderModule } from './tile-slider/tile-slider.module';
 
 @NgModule({
-  declarations: [FadeSliderDirective, CubeSliderDirective, TileSliderDirective, CarouselSliderDirective],
-  exports: [FadeSliderDirective, CubeSliderDirective]
+  imports: [
+    CarouselSliderModule,
+    CubeSliderModule,
+    FadeSliderModule,
+    TileSliderModule
+  ]
 })
 export class BoxSliderModule {}

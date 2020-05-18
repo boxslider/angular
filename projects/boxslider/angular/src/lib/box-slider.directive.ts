@@ -15,10 +15,11 @@ import {
   CubeSliderOptions,
   Effect,
   EventData,
-  FadeSliderOptions
+  FadeSliderOptions,
+  TileSliderOptions
 } from '@boxslider/slider';
 
-type EffectOptions = FadeSliderOptions | CarouselSliderOptions | CubeSliderOptions | CubeSliderOptions;
+type EffectOptions = CarouselSliderOptions | CubeSliderOptions | FadeSliderOptions | TileSliderOptions;
 
 export class BoxSliderDirective implements AfterViewInit, OnChanges, OnDestroy {
   @Input() activeSlide: number;

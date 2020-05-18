@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 import { CubeSlider, CubeSliderOptions } from '@boxslider/slider';
 
-import { BoxSliderDirective } from './box-slider.directive';
+import { BoxSliderDirective } from '../box-slider.directive';
 
 @Directive({
   selector: '[bxlCubeSlider]'

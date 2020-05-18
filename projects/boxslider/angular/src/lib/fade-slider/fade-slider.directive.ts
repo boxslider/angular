@@ -1,7 +1,7 @@
 import { Directive } from '@angular/core';
 import { FadeSlider, FadeSliderOptions } from '@boxslider/slider';
 
-import { BoxSliderDirective } from './box-slider.directive';
+import { BoxSliderDirective } from '../box-slider.directive';
 
 @Directive({
   selector: '[bxlFadeSlider]',
